@@ -1,24 +1,8 @@
-# README
+# CraftSociety
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This codebase runs the player management system for the Irvine Bubble.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Development
+* Ruby Version: 6.0.0rc1
+* System Dependencies: None
+* Git: Be sure to clone recursively (there are submodules).
