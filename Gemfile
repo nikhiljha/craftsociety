@@ -21,6 +21,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# Use Devise for Authentication
+gem 'devise', '~> 4.6', '>= 4.6.2'
 # Call HTTP APIs
 gem 'httparty', '~> 0.17.0'
 
