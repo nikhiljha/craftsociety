@@ -4,6 +4,7 @@ class CreatePlayers < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :email
       t.string :mcuuid
+      t.boolean :enabled
       t.boolean :admin
       t.string :password_digest
 
