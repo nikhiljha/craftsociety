@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'player_pages#dashboard'
 
   # Auth
-  devise_for :players
+  devise_for :players, controllers: {
+    registrations: 'players/registrations'
+  }
 
   # API
   get 'api/whitelist_check/:uuid', to: 'players#canplay'
