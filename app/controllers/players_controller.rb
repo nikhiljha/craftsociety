@@ -3,7 +3,8 @@ class PlayersController < ApplicationController
   end
 
   def canplay
-    @player = Player.find_by(mcuuid: params[:uuid])
+    @cleanuuid = params[:uuid].tr("-", "")
+    @player = Player.find_by(mcuuid: @cleanuuid)
     @allowed = false
     if @player.nil?
       # Do nothing.
