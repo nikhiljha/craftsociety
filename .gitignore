@@ -38,3 +38,6 @@ yarn-debug.log*
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Linux is Weird
+/vendor
