@@ -1,3 +1,4 @@
+<section class="padding-xxl">
 <h2><%= t "devise.invitations.edit.header" %></h2>
 
 <%= form_for(resource, as: resource_name, url: invitation_path(resource_name), html: { method: :put }) do |f| %>
@@ -6,12 +7,12 @@
 
   <% if f.object.class.require_password_on_accepting %>
     <div class="field">
-      <%= f.label :password %><br />
+      <%= f.label :password %>
       <%= f.password_field :password %>
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br />
+      <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation %>
     </div>
   <% end %>
@@ -20,3 +21,4 @@
     <%= f.submit t("devise.invitations.edit.submit_button") %>
   </div>
 <% end %>
+</section>
