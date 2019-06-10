@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  # Static
+  # Staticish
   root 'static_pages#home'
-  get 'static_pages/about'
+  get 'dashboard', to: 'player_pages#dashboard'
 
   # Auth
   devise_for :players

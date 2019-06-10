@@ -1,0 +1,34 @@
+<center>
+  <header class="padding-vertical-xxl">
+    <section class="container">
+      <svg class="bubble" width="80" height="80" viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <circle cx="7.2" cy="14.4" r="3.2" />
+        <circle cx="14.8" cy="18" r="2" />
+        <circle cx="15.2" cy="8.8" r="4.8" />
+      </svg>
+      <h1 class="display-title display-title-xxl margin-top-s">The Irvine Bubble</h1>
+      <p class="no-margin font-size-s"><strong>v1.14.2</strong> | Minecraft Survival</p>
+    </section>
+  </header>
+
+  <p class="display-title display-title-m">Player Dashboard</p>
+  <p class="padding-horizontal-xxl max-width-m">
+    The player dashboard is where you can change your user profile and invite new people.
+    In the future, you will also be able to declare and manage your nation, wars, and
+    more from this page. Get updates on Discord for when that happens!
+  </p>
+  <nav class="margin-top-m">
+    <ul>
+      <li>
+        <%= link_to 'Player Settings', edit_player_registration_path, :class => 'button button-xl' %>
+      </li>
+      <li>
+        <%= link_to "Invite Player", new_player_invitation_path, :class => 'button button-xl'  %>
+      </li>
+      <li>
+        <%= link_to "Logout", destroy_player_session_path, method: :delete, :class => 'button button-s error'  %>
+      </li>
+    </nav>
+</div>
+</center>
