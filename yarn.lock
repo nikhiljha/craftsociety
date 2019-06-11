@@ -6622,6 +6622,11 @@ turbolinks@^5.2.0:
   resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
   integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
 
+turretcss@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/turretcss/-/turretcss-5.1.3.tgz#e9f7b485b6828209ce6287adafe3b347a0e0c3fa"
+  integrity sha512-tFzMagg4Nkf0a+OU2F7xcMKOMWlWeiSoMKNbNVZ2TsFZ3U1xEZtVOpAo7biQvf5ZibMk3ESmg2RWJfuKYmmzwg==
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
