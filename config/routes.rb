@@ -5,11 +5,12 @@ Rails.application.routes.draw do
 
   # Auth
   devise_for :players, controllers: {
-    registrations: 'players/registrations'
+    registrations: 'players/registrations',
+    invitations: 'players/invitations'
   }, skip: [:registrations]
   as :player do
     get 'players/edit' => 'devise/registrations#edit', :as => 'edit_player_registration'
-    put 'players' => 'devise/registrations#update', :as => 'player_registration'
+    put 'players' => 'players/registrations#update', :as => 'player_registration'
   end
 
   # API

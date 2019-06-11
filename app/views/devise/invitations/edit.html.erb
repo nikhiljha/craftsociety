@@ -5,7 +5,18 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.hidden_field :invitation_token, readonly: true %>
 
+  <p class="max-width-l">
+    Welcome to The Irvine Bubble. We're glad to have you here.
+    Be sure to follow a few guidelines, outlined in the <em>#rules</em> channel in Discord.
+    If you aren't already in the Discord, <a href="https://discord.gg/ChMc5XS">click here</a> to join.
+  </p>
+
   <% if f.object.class.require_password_on_accepting %>
+    <div class="field">
+      <%= f.label "Minecraft Username" %>
+      <%= f.text_field :mcuuid %>
+    </div>
+
     <div class="field">
       <%= f.label :password %>
       <%= f.password_field :password %>

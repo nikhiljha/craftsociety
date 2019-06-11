@@ -7,5 +7,6 @@ class ApplicationController < ActionController::Base
     attributes = [:email, :mcuuid]
     devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
     devise_parameter_sanitizer.permit(:account_update, keys: attributes)
+    devise_parameter_sanitizer.permit(:accept_invitation, keys: [:mcuuid])
   end
 end
