@@ -18,8 +18,6 @@ RUN apk add tzdata
 
 COPY . .
 RUN yarn cache clean
-RUN rm -fr ./app/assets/stylesheets/turretcss/docs
-RUN rm -fr ./app/assets/stylesheets/turretcss/turret
 RUN bundle e rake assets:precompile
 
 LABEL maintainer="Nikhil Jha <hi@nikhiljha.com>"
