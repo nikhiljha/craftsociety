@@ -29,6 +29,8 @@ gem 'devise_invitable', '~> 2.0', '>= 2.0.1'
 gem 'httparty', '~> 0.17.0'
 # Send email in production
 gem 'sendgrid-actionmailer', '~> 2.3'
+# PostgreSQL in production
+gem 'pg', '~> 1.1', '>= 1.1.4'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
