@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 # Use Devise for Authentication
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 # Allow players to get invited
 gem 'devise_invitable', '~> 2.0', '>= 2.0.1'
 # Call HTTP APIs
